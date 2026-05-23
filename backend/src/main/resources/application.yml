@@ -1,0 +1,13 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 12MB
+
+visual-story:
+  vision-provider: ${VISION_PROVIDER:mock}
+  vision-api-key: ${VISION_API_KEY:}
+  upload-dir: uploads

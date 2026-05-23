@@ -1,0 +1,11 @@
+<view class="card">
+  <image wx:if="{{preview}}" class="preview" src="{{preview}}" mode="aspectFill" />
+  <view wx:else class="placeholder">选择或拍摄一张照片</view>
+</view>
+
+<view class="actions">
+  <view class="btn-primary" bindtap="chooseImage">相册 / 拍照</view>
+  <view class="btn-primary" bindtap="analyze" wx:if="{{preview}}">生成故事轮播</view>
+</view>
+
+<view wx:if="{{loading}}" class="loading">AI 分析中…</view>

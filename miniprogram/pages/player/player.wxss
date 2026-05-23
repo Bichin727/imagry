@@ -1,0 +1,7 @@
+.hook { font-size: 32rpx; font-weight: 600; }
+.swiper { height: 520rpx; margin: 0 24rpx; }
+.slide-title { font-size: 36rpx; font-weight: 700; display: block; margin-bottom: 16rpx; }
+.slide-caption { font-size: 28rpx; opacity: 0.85; display: block; margin-bottom: 24rpx; }
+.slide-narration { font-size: 26rpx; color: #ffb4b4; display: block; line-height: 1.6; }
+.actions { margin-top: 24rpx; }
+.hint { display: block; margin-top: 16rpx; font-size: 24rpx; opacity: 0.6; }

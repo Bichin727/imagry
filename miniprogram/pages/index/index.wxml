@@ -1,0 +1,14 @@
+<view class="hero card">
+  <text class="title">拍一下，生成故事轮播</text>
+  <text class="subtitle">赛道二 · 视觉理解 + 配音解说</text>
+  <view class="btn-primary" bindtap="goCapture">开始拍摄</view>
+</view>
+
+<view class="card">
+  <text class="label">演示场景</text>
+  <view class="scenes">
+    <view class="scene {{scene==='food'?'active':''}}" data-scene="food" bindtap="pickScene">美食</view>
+    <view class="scene {{scene==='pet'?'active':''}}" data-scene="pet" bindtap="pickScene">宠物</view>
+    <view class="scene {{scene==='travel'?'active':''}}" data-scene="travel" bindtap="pickScene">旅行</view>
+  </view>
+</view>

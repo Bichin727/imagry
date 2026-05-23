@@ -1,0 +1,18 @@
+<view class="card hook" wx:if="{{story}}">
+  <text>{{story.hook}}</text>
+</view>
+
+<swiper class="swiper" indicator-dots circular wx:if="{{story}}">
+  <swiper-item wx:for="{{story.slides}}" wx:key="index">
+    <view class="slide card">
+      <text class="slide-title">{{item.title}}</text>
+      <text class="slide-caption">{{item.caption}}</text>
+      <text class="slide-narration">{{item.narration}}</text>
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="card actions" wx:if="{{story}}">
+  <view class="btn-primary" bindtap="playNarration">播放配音（TTS）</view>
+  <text class="hint" wx:if="{{ttsHint}}">{{ttsHint}}</text>
+</view>
