@@ -1,0 +1,9 @@
+﻿@import "tailwindcss";
+:root { --bg-primary: #faf7f2; --bg-card: #ffffff; --text-primary: #2d2a26; --text-secondary: #6b6560; --accent: #d97706; --border: #e8e3dc; }
+body { background: var(--bg-primary); color: var(--text-primary); font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; -webkit-font-smoothing: antialiased; }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(20px) } to { opacity:1; transform:translateY(0) } }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+@keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
+.animate-fade-in-up { animation: fadeInUp 0.5s ease-out; }
+.animate-pulse { animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+.animate-shimmer { background: linear-gradient(90deg,#f0ebe3 25%,#d4cfc9 50%,#f0ebe3 75%); background-size:200% 100%; animation: shimmer 1.5s infinite; }

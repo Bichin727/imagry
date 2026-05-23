@@ -1,9 +1,14 @@
-# Java
+﻿# Java
 backend/target/
 backend/.idea/
 *.class
 *.jar
 *.war
+
+# Next.js
+/.next/
+/out/
+/node_modules
 
 # Node / mini program
 miniprogram/node_modules/
@@ -20,5 +25,17 @@ Thumbs.db
 .vscode/
 *.log
 
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
 # Uploads (runtime)
 backend/uploads/
+
+# misc
+*.pem
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
