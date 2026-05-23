@@ -5,7 +5,6 @@
 ## 仓库结构
 
 ```text
-visual-story-hackathon/
 ├── backend/          # Spring Boot API
 ├── miniprogram/      # 微信小程序
 └── docs/             # 答辩与 API 说明
