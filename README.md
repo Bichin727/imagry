@@ -16,6 +16,22 @@
 
 ---
 
+## 统一后端（Web + 小程序）
+
+```text
+忆青集 Web (Next.js)  ──→  Spring Boot :8080
+微信小程序            ──→  Spring Boot :8080   （同一套 API）
+```
+
+| 调用方 | 接口 |
+|--------|------|
+| Web `/api/generate` | 转发 `POST /api/vision/story` + `POST /api/tts/speak` |
+| 小程序 `services/api.js` | 直接 `POST /api/vision/story`、`/api/tts/speak` |
+
+启动顺序：**先 `mvn spring-boot:run`，再 `npm run dev`**。
+
+---
+
 ## 忆青集 Web（游园会扫码即用）
 
 > 旧物不言 · AI 代它说
@@ -35,6 +51,11 @@
 🎌 日漫风 · 🏮 水墨国风 · 👾 像素复古 · 📖 温暖绘本
 
 ```bash
+# 终端 1
+cd backend && mvn spring-boot:run
+
+# 终端 2
+cp .env.example .env.local   # 可选
 npm install && npm run dev   # http://localhost:3000
 ```
 
